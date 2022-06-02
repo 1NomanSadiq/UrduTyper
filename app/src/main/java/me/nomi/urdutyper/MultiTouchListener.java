@@ -6,6 +6,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.EditText;
 
 public class MultiTouchListener implements OnTouchListener {
 
@@ -84,7 +85,7 @@ public class MultiTouchListener implements OnTouchListener {
     public boolean onTouch(View view, MotionEvent event) {
         mScaleGestureDetector.onTouchEvent(view, event);
 
-        if(gestureDetector.onTouchEvent(event))
+        if(gestureDetector.onTouchEvent(event) && view instanceof EditText)
         {
             view.requestFocus();
             InputMethodManager imm = (InputMethodManager) context.getSystemService(Context.INPUT_METHOD_SERVICE);

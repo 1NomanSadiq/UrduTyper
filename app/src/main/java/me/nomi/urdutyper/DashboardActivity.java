@@ -74,27 +74,27 @@ public class DashboardActivity extends AppCompatActivity implements MyAdapter.On
         });
 
         databaseReference.addValueEventListener(new ValueEventListener() {
-                                                    @Override
-                                                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-                                                        Iterator<DataSnapshot> iterator = snapshot.getChildren().iterator();
-                                                        Iterator<DataSnapshot> iterator2 = snapshot.getChildren().iterator();
-                                                        int length = (int) snapshot.getChildrenCount();
-                                                        filenames = new String[length];
-                                                        urls = new String[length];
-                                                        for (int i = 0; i < length; i++) {
-                                                            filenames[i] = Objects.requireNonNull(iterator.next().getKey());
-                                                            urls[i] = Objects.requireNonNull(iterator2.next().getValue()).toString();
-                                                        }
-                                                        myAdapter = new MyAdapter(filenames, urls, uid, DashboardActivity.this, DashboardActivity.this);
-                                                        recyclerView.setAdapter(myAdapter);
+                @Override
+                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                    Iterator<DataSnapshot> iterator = snapshot.getChildren().iterator();
+                    Iterator<DataSnapshot> iterator2 = snapshot.getChildren().iterator();
+                    int length = (int) snapshot.getChildrenCount();
+                    filenames = new String[length];
+                    urls = new String[length];
+                    for (int i = 0; i < length; i++) {
+                        filenames[i] = Objects.requireNonNull(iterator.next().getKey());
+                        urls[i] = Objects.requireNonNull(iterator2.next().getValue()).toString();
+                    }
+                    myAdapter = new MyAdapter(filenames, urls, uid, DashboardActivity.this, DashboardActivity.this);
+                    recyclerView.setAdapter(myAdapter);
 
-                                                    }
+                }
 
-                                                    @Override
-                                                    public void onCancelled(@NonNull DatabaseError error) {
+                @Override
+                public void onCancelled(@NonNull DatabaseError error) {
 
-                                                    }
-                                                }
+                }
+            }
 
         );
 
@@ -118,8 +118,6 @@ public class DashboardActivity extends AppCompatActivity implements MyAdapter.On
 
         MultiTouchListener viewImageTouchListener = new MultiTouchListener(this);
         viewImageTouchListener.isRotateEnabled = false;
-        viewImageTouchListener.isTranslateEnabled = false;
-        viewImageTouchListener.minimumScale = 1.0f;
         viewImage.setOnTouchListener(viewImageTouchListener);
 
         saveBigImage.setOnClickListener(v1 -> {
