@@ -116,7 +116,11 @@ public class DashboardActivity extends AppCompatActivity implements MyAdapter.On
             }
         });
 
-        viewImage.setOnTouchListener(new MultiTouchListener(this));
+        MultiTouchListener viewImageTouchListener = new MultiTouchListener(this);
+        viewImageTouchListener.isRotateEnabled = false;
+        viewImageTouchListener.isTranslateEnabled = false;
+        viewImageTouchListener.minimumScale = 1.0f;
+        viewImage.setOnTouchListener(viewImageTouchListener);
 
         saveBigImage.setOnClickListener(v1 -> {
 

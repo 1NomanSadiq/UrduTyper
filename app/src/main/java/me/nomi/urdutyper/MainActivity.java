@@ -90,7 +90,11 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
                 ResourcesCompat.getFont(MainActivity.this, R.font.aadil_aadil),
                 ResourcesCompat.getFont(MainActivity.this, R.font.gandhara_suls_regular),
                 ResourcesCompat.getFont(MainActivity.this, R.font.jameel_noori_nastaleeq),
-                ResourcesCompat.getFont(MainActivity.this, R.font.lobster_regular)
+                ResourcesCompat.getFont(MainActivity.this, R.font.jameel_noori_nastaleeq_kasheeda),
+                ResourcesCompat.getFont(MainActivity.this, R.font.lobster_regular),
+                ResourcesCompat.getFont(MainActivity.this, R.font.alqalam_khat_e_sumbali_regular),
+                ResourcesCompat.getFont(MainActivity.this, R.font.alqalam_makki_regular)
+
         };
 
         Random random = new Random();

@@ -46,7 +46,7 @@ public class ImageMaker {
             return null;
         }
 
-        SimpleDateFormat formatter = new SimpleDateFormat("yyMMddhhmmss");
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyyMMdd_hhmmss");
         Date now = new Date();
         Prefs prefs = new Prefs(context);
 
