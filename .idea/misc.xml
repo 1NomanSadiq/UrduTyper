@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.15572916666666667" />
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/drawable/align_center.xml" value="0.234" />
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/drawable/align_left.xml" value="0.234" />
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/drawable/align_right.xml" value="0.234" />
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/drawable/background.xml" value="0.28489583333333335" />
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/drawable/background_color.xml" value="0.28489583333333335" />
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/drawable/button_style.xml" value="0.1725" />
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/drawable/dialog.xml" value="0.234" />
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/drawable/dialog_background.xml" value="0.28489583333333335" />
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/drawable/fab_labels.xml" value="0.3828125" />
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/drawable/font_style.xml" value="0.15572916666666667" />
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/drawable/gradient.xml" value="0.15572916666666667" />
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/drawable/ic_baseline_gradient_24.xml" value="0.15572916666666667" />
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/drawable/ic_launcher_background.xml" value="0.15572916666666667" />
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/drawable/ic_launcher_icons_custom_foreground.xml" value="0.234" />
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/drawable/ok.xml" value="0.234" />
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/drawable/rotate.xml" value="0.234" />
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/drawable/sample.xml" value="0.234" />
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/drawable/save_jpg.xml" value="0.234" />
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/drawable/seekbar_gradient.xml" value="0.28489583333333335" />
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/layout-v26/activity_main.xml" value="0.26875" />
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/layout-v26/activity_main2.xml" value="0.1796875" />
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/layout/activity_dashboard.xml" value="0.26875" />
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/layout/activity_login.xml" value="0.26875" />
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/layout/activity_main.xml" value="0.26875" />
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/layout/activity_main2.xml" value="0.26875" />
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/layout/activity_offline.xml" value="0.26875" />
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/layout/activity_online.xml" value="0.26875" />
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/layout/activity_signup.xml" value="0.3246471226927253" />
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/layout/activity_starter.xml" value="0.26875" />
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/layout/background_color_dialog.xml" value="0.26875" />
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/layout/color_pick_dialog.xml" value="0.26875" />
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/layout/color_picker.xml" value="0.26875" />
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/layout/dialog.xml" value="0.26875" />
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/layout/font_style_dialog.xml" value="0.26875" />
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/layout/font_style_dialogue.xml" value="0.37812789620018533" />
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/layout/gradient.xml" value="0.26875" />
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/layout/singlerow.xml" value="0.26875" />
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.28489583333333335" />
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/mipmap-anydpi-v26/ic_launcher_icons_custom.xml" value="0.234" />
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/mipmap-anydpi-v26/ic_launcher_icons_custom_round.xml" value="0.234" />
+        <entry key="..\:/Users/Sadiq/AndroidStudioProjects/UrduTyper/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.15572916666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
