@@ -50,7 +50,6 @@ public class DashboardActivity extends AppCompatActivity implements MyAdapter.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
-        Toast.makeText(getApplicationContext(), "IN", Toast.LENGTH_LONG).show();
         recyclerView = findViewById(R.id.recView);
         button = findViewById(R.id.newImage);
         logout = findViewById(R.id.logOut);
