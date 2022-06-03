@@ -10,13 +10,16 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class Starter extends AppCompatActivity {
-    public static boolean isCalled = false;
+    private static FirebaseDatabase database;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_starter);
-        if (!isCalled)
-            FirebaseDatabase.getInstance().setPersistenceEnabled(true);
+        if (database == null) {
+            database = FirebaseDatabase.getInstance();
+            database.setPersistenceEnabled(true);
+        }
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         Intent intent;
         if (user != null) {
