@@ -2,6 +2,7 @@ package me.nomi.urdutyper;
 
 import android.Manifest;
 import android.app.Dialog;
+import android.content.Context;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.graphics.Typeface;
@@ -14,6 +15,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.view.inputmethod.EditorInfo;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
@@ -115,6 +117,16 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
         });
 
         editText.setOnClickListener(v -> floatingActionsMenu.collapse());
+        editText.setOnEditorActionListener((v13, actionId, event) -> actionId == EditorInfo.IME_ACTION_DONE);
+        editText.setOnFocusChangeListener((v, hasFocus) -> {
+            InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+            if(hasFocus)
+            {
+                imm.showSoftInputFromInputMethod(v.getWindowToken(), 0);
+            }
+            else
+                imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
+        });
 
         saveImage.setOnClickListener(v1 -> {
             if (!checkPermission()) {
@@ -263,8 +275,6 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
                     fontNumber = fontNumber + 1;
                 editText.setTypeface(fonts[fontNumber]);
             });
-
-            editText.setOnEditorActionListener((v13, actionId, event) -> actionId == EditorInfo.IME_ACTION_DONE);
 
             fontSize.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
                 @Override

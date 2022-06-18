@@ -93,7 +93,7 @@ public class MultiTouchListener implements OnTouchListener {
             }
             view.requestFocus();
             InputMethodManager imm = (InputMethodManager) context.getSystemService(Context.INPUT_METHOD_SERVICE);
-            imm.toggleSoftInput(InputMethodManager.SHOW_FORCED,0);
+            imm.showSoftInputFromInputMethod(view.getWindowToken(), 0);
             return true;
         }
 
