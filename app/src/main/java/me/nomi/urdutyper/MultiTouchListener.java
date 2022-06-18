@@ -87,6 +87,10 @@ public class MultiTouchListener implements OnTouchListener {
 
         if(gestureDetector.onTouchEvent(event) && view instanceof EditText)
         {
+            if(view.isFocused())
+            {
+                return false;
+            }
             view.requestFocus();
             InputMethodManager imm = (InputMethodManager) context.getSystemService(Context.INPUT_METHOD_SERVICE);
             imm.toggleSoftInput(InputMethodManager.SHOW_FORCED,0);

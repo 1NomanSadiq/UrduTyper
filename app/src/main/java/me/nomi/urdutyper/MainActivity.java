@@ -13,6 +13,7 @@ import android.view.Gravity;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.view.inputmethod.EditorInfo;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
@@ -263,6 +264,8 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
                 editText.setTypeface(fonts[fontNumber]);
             });
 
+            editText.setOnEditorActionListener((v13, actionId, event) -> actionId == EditorInfo.IME_ACTION_DONE);
+
             fontSize.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
                 @Override
                 public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
@@ -469,5 +472,14 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
         editText.setTextSize(size);
         editText.setTextColor(savedInstanceState.getInt("fontColor"));
         setGradientBackground();
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (!editText.isFocused()) {
+            super.onBackPressed();
+        } else {
+            editText.clearFocus();
+        }
     }
 }
