@@ -16,12 +16,12 @@ public class MultiTouchListener implements OnTouchListener {
     public boolean isScaleEnabled = true;
     public float minimumScale = 0.5f;
     public float maximumScale = 10.0f;
+    GestureDetector gestureDetector;
+    Context context;
     private int mActivePointerId = INVALID_POINTER_ID;
     private float mPrevX;
     private float mPrevY;
     private ScaleGestureDetector mScaleGestureDetector;
-    GestureDetector gestureDetector;
-    Context context;
 
     public MultiTouchListener(Context context) {
         mScaleGestureDetector = new ScaleGestureDetector(new ScaleGestureListener());
@@ -85,10 +85,8 @@ public class MultiTouchListener implements OnTouchListener {
     public boolean onTouch(View view, MotionEvent event) {
         mScaleGestureDetector.onTouchEvent(view, event);
 
-        if(gestureDetector.onTouchEvent(event) && view instanceof EditText)
-        {
-            if(view.isFocused())
-            {
+        if (gestureDetector.onTouchEvent(event) && view instanceof EditText) {
+            if (view.isFocused()) {
                 return false;
             }
             view.requestFocus();
@@ -156,6 +154,7 @@ public class MultiTouchListener implements OnTouchListener {
 
         return true;
     }
+
     private class SingleTapConfirm extends GestureDetector.SimpleOnGestureListener {
 
         @Override

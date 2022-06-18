@@ -120,11 +120,9 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
         editText.setOnEditorActionListener((v13, actionId, event) -> actionId == EditorInfo.IME_ACTION_DONE);
         editText.setOnFocusChangeListener((v, hasFocus) -> {
             InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-            if(hasFocus)
-            {
+            if (hasFocus) {
                 imm.showSoftInputFromInputMethod(v.getWindowToken(), 0);
-            }
-            else
+            } else
                 imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
         });
 
