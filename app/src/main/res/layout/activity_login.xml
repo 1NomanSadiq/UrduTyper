@@ -11,10 +11,11 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="100dp"
         android:layout_marginBottom="50dp"
         android:gravity="center_horizontal"
         android:text="LOGIN"
+        android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="bold" />
 
@@ -63,7 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
-        android:background="@drawable/button_style"
+        android:background="@drawable/buttons_style"
         android:text="Login" />
 
     <TextView
@@ -73,7 +74,7 @@
         android:layout_marginTop="20dp"
         android:gravity="center_horizontal"
         android:text="Sign Up?"
-        android:textColor="@color/purple_700" />
+        android:textColor="#E8E8E8" />
 
     <TextView
         android:id="@+id/forgot_password_text"
@@ -82,7 +83,7 @@
         android:layout_marginTop="20dp"
         android:gravity="center_horizontal"
         android:text="Forgot Password?"
-        android:textColor="@color/purple_700" />
+        android:textColor="#E8E8E8" />
 
 
     <ProgressBar

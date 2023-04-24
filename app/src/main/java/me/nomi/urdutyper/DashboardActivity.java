@@ -18,6 +18,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.getbase.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -42,7 +43,8 @@ public class DashboardActivity extends AppCompatActivity implements MyAdapter.On
     String[] urls;
     String[] filenames;
     MyAdapter myAdapter;
-    Button button, logout;
+    Button logout;
+    FloatingActionButton button;
     ImageView viewImage, saveBigImage, delete;
     RelativeLayout relativeLayout;
 
@@ -103,7 +105,6 @@ public class DashboardActivity extends AppCompatActivity implements MyAdapter.On
 
     @Override
     public void onImageClick(int position) {
-
         url = urls[position];
         Picasso.get().load(url).error(R.drawable.not_found).networkPolicy(NetworkPolicy.OFFLINE).into(viewImage, new Callback() {
             @Override
@@ -116,9 +117,9 @@ public class DashboardActivity extends AppCompatActivity implements MyAdapter.On
             }
         });
 
-        MultiTouchListener viewImageTouchListener = new MultiTouchListener(this);
-        viewImageTouchListener.isRotateEnabled = false;
-        viewImage.setOnTouchListener(viewImageTouchListener);
+//        MultiTouchListener viewImageTouchListener = new MultiTouchListener(this);
+//        viewImageTouchListener.isRotateEnabled = false;
+//        viewImage.setOnTouchListener(viewImageTouchListener);
 
         saveBigImage.setOnClickListener(v1 -> {
 
